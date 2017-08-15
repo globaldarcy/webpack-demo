@@ -2,21 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><%= htmlWebpackPlugin.options.title %></title>
-	<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+	<title>Webpack App</title>
 </head>
 <body>
-	<script src="<%= htmlWebpackPlugin.files.chunks.search.entry %>"></script>
-	<h1><%= htmlWebpackPlugin.options.data %></h1>
-	<div>
-		<% for(var key in htmlWebpackPlugin.files){ %>
-			<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
-		<% } %>
-<br>
-
-		<% for(var key in htmlWebpackPlugin.options){ %>
-			<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.options[key]) %>
-		<% } %>
-	</div>
+    <div id="app"></div>
 </body>
 </html>

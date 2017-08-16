@@ -59,7 +59,7 @@ module.exports = {
     entry: './src/app.js',
     output: {
         path: __dirname + '/dist', //输出文件路径
-        filename: 'js/[name].bundle.js', // 输出文件名
+        filename: 'js/[name].bundle.js' // 输出文件名
     },
     module:{
         rules: [
@@ -122,6 +122,34 @@ module.exports = {
                         }
                     },
                     'less-loader'
+                ]
+            },
+            /*{
+                test:/\.(png|jpg|gif|svg)$/i,
+                // loader: 'file-loader',
+                // query: {
+                //     name: 'assets/[name]-[hash:5].[ext]'
+                // },
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options:{
+                            name: 'assets/[name]-[hash:3].[ext]'
+                        }
+                    }
+                ]
+            },*/
+            {
+                test:/\.(png|jpg|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options:{
+                            limit:200000,
+                            name: 'assets/[name]-[hash:3].[ext]'
+                        }
+                    },
+                    // 'image-webpack-loader' //没下载下来
                 ]
             }
         ]

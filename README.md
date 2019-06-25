@@ -38,3 +38,6 @@ project
         style.scss    // scss文件入口
 
 ```
+
+## License
+MIT

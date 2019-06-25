@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:focus,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+$black: #000;
+$blcakGray: #333;
+$gray: #666;
+$white: #fff;
+
+p {
+    margin-bottom: 0;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+header {
+    background-color: rgb(6, 163, 253);
+    height: 100px;
+    margin-bottom: 50px;
+}
+footer {
+    background-color: rgb(253, 6, 179);
+    height: 100px;
+    margin-top: 50px;
+}

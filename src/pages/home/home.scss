@@ -1,0 +1,41 @@
+.home {
+    font-size: 42px;
+    background: rgb(72, 165, 100);
+    text-align: center;
+    img {
+        vertical-align: top;
+        width: 200px;
+    }
+
+    .box {
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        height: 400px;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // flex-flow: row;
+        // justify-content: space-around;
+        // align-items: stretch;
+        // align-content: space-between;
+
+        .item {
+            background: rgb(33, 153, 250);
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            color: #fff;
+            flex: auto;
+            // align-self: auto;
+            &:last-child {
+                // order: -1;
+                // flex-grow: 2;
+                // flex-shrink: 3;
+                // flex-basis: 200px;
+                align-self: center;
+            }
+            &:nth-child(17) {
+                // flex-grow: 2; Android Green Alliance
+            }
+        }
+    }
+}
